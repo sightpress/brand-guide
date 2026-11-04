@@ -1,0 +1,295 @@
+{
+  "$description": "SightPress sound identity. This file is the source of truth: the build synthesises every sound from it, so they are reproducible and carry no third-party samples. Everything is in D major pentatonic (D, E, F sharp, A, B), so the sound logo and the interface sounds belong together.",
+  "sampleRate": 48000,
+  "rules": {
+    "$description": "Checked by the build. Interface sounds must stay short and quiet so they never cover a screen reader's voice. The logo sound needs a caption.",
+    "ui": {
+      "maxSeconds": 1,
+      "maxPeakDb": -12
+    },
+    "logo": {
+      "maxSeconds": 4,
+      "maxPeakDb": -3,
+      "caption": true
+    },
+    "minHz": 140,
+    "maxHz": 1200
+  },
+  "instruments": {
+    "$description": "Additive voices. Each partial is [frequency ratio, level, decay time in seconds]; the note's own length scales nothing, so a voice sounds the same everywhere.",
+    "mallet": {
+      "attack": 0.004,
+      "partials": [
+        [
+          1,
+          1,
+          0.42
+        ],
+        [
+          4,
+          0.22,
+          0.07
+        ],
+        [
+          10,
+          0.05,
+          0.025
+        ]
+      ]
+    },
+    "mallet-soft": {
+      "attack": 0.008,
+      "partials": [
+        [
+          1,
+          1,
+          0.34
+        ],
+        [
+          4,
+          0.12,
+          0.05
+        ],
+        [
+          10,
+          0.02,
+          0.02
+        ]
+      ]
+    },
+    "bell": {
+      "attack": 0.003,
+      "partials": [
+        [
+          1,
+          1,
+          1.3
+        ],
+        [
+          2.76,
+          0.42,
+          0.55
+        ],
+        [
+          5.4,
+          0.18,
+          0.24
+        ],
+        [
+          8.93,
+          0.06,
+          0.12
+        ]
+      ]
+    },
+    "pad": {
+      "attack": 0.45,
+      "release": 0.9,
+      "detuneCents": 3,
+      "partials": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0.28,
+          0
+        ],
+        [
+          3,
+          0.08,
+          0
+        ]
+      ]
+    }
+  },
+  "sounds": [
+    {
+      "file": "sound/sightpress-sound-logo.wav",
+      "kind": "logo",
+      "name": "Sound logo",
+      "use": "The opening or closing of videos, podcasts and talks. Never on web pages, never automatically.",
+      "description": "Four soft mallet notes rise, dip once like the curve of the S, then land on a single warm bell, the amber dot, over a quiet chord, and fade out over the last second.",
+      "caption": "[SightPress sound logo]",
+      "seconds": 3.6,
+      "fadeSeconds": 1,
+      "peakDb": -3,
+      "notes": [
+        {
+          "at": 0,
+          "note": "D3",
+          "for": 2.1,
+          "voice": "pad",
+          "level": 0.16
+        },
+        {
+          "at": 0,
+          "note": "A3",
+          "for": 2.1,
+          "voice": "pad",
+          "level": 0.12
+        },
+        {
+          "at": 0,
+          "note": "E4",
+          "for": 2.1,
+          "voice": "pad",
+          "level": 0.08
+        },
+        {
+          "at": 0.05,
+          "note": "F#4",
+          "voice": "mallet",
+          "level": 0.7
+        },
+        {
+          "at": 0.21,
+          "note": "A4",
+          "voice": "mallet",
+          "level": 0.75
+        },
+        {
+          "at": 0.37,
+          "note": "D5",
+          "voice": "mallet",
+          "level": 0.8
+        },
+        {
+          "at": 0.53,
+          "note": "B4",
+          "voice": "mallet",
+          "level": 0.7
+        },
+        {
+          "at": 0.8,
+          "note": "A5",
+          "voice": "bell",
+          "level": 0.85
+        }
+      ]
+    },
+    {
+      "file": "sound/ui-success.wav",
+      "kind": "ui",
+      "name": "Success",
+      "use": "Something finished as asked: saved, published, sent.",
+      "description": "Two quick mallet notes going up.",
+      "seconds": 0.55,
+      "peakDb": -12,
+      "notes": [
+        {
+          "at": 0,
+          "note": "D5",
+          "voice": "mallet",
+          "level": 0.8
+        },
+        {
+          "at": 0.09,
+          "note": "A5",
+          "voice": "mallet",
+          "level": 0.9
+        }
+      ]
+    },
+    {
+      "file": "sound/ui-error.wav",
+      "kind": "ui",
+      "name": "Error",
+      "use": "Something could not be done and needs the person’s attention, such as a form with errors.",
+      "description": "Two low, soft notes going down. Calm, never an alarm.",
+      "seconds": 0.6,
+      "peakDb": -12,
+      "notes": [
+        {
+          "at": 0,
+          "note": "A4",
+          "voice": "mallet-soft",
+          "level": 0.9
+        },
+        {
+          "at": 0.13,
+          "note": "F#4",
+          "voice": "mallet-soft",
+          "level": 0.9
+        }
+      ]
+    },
+    {
+      "file": "sound/ui-warning.wav",
+      "kind": "ui",
+      "name": "Warning",
+      "use": "Something worth checking that does not block the person.",
+      "description": "The same middle note, tapped twice.",
+      "seconds": 0.55,
+      "peakDb": -12,
+      "notes": [
+        {
+          "at": 0,
+          "note": "A4",
+          "voice": "mallet",
+          "level": 0.85
+        },
+        {
+          "at": 0.14,
+          "note": "A4",
+          "voice": "mallet",
+          "level": 0.85
+        }
+      ]
+    },
+    {
+      "file": "sound/ui-notification.wav",
+      "kind": "ui",
+      "name": "Notification",
+      "use": "Something new arrived: a comment, a review request, a finished import.",
+      "description": "A single bell, the sound of the amber dot.",
+      "seconds": 0.9,
+      "peakDb": -14,
+      "notes": [
+        {
+          "at": 0,
+          "note": "A5",
+          "voice": "bell",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "file": "sound/ui-publish.wav",
+      "kind": "ui",
+      "name": "Published",
+      "use": "A page or article went live. A short form of the sound logo.",
+      "description": "Three mallet notes rising quickly, then the bell.",
+      "seconds": 0.95,
+      "peakDb": -12,
+      "notes": [
+        {
+          "at": 0,
+          "note": "D5",
+          "voice": "mallet",
+          "level": 0.7
+        },
+        {
+          "at": 0.07,
+          "note": "F#5",
+          "voice": "mallet",
+          "level": 0.75
+        },
+        {
+          "at": 0.14,
+          "note": "A5",
+          "voice": "mallet",
+          "level": 0.8
+        },
+        {
+          "at": 0.25,
+          "note": "D5",
+          "voice": "bell",
+          "level": 0.8
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand guide – SightPress</title>
+  <meta name="description" content="The SightPress brand guide: logo, colours, type, icons and the rules that keep them accessible.">
+  <meta name="theme-color" content="#3D2FC4">
+  <link rel="icon" href="../favicons/favicon.ico" sizes="48x48">
+  <link rel="icon" href="../favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicons/apple-touch-icon.png">
+  <link rel="manifest" href="../favicons/site.webmanifest">
+  <link rel="preload" href="../fonts/atkinson-hyperlegible-next-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="guide.css">
+  <link rel="stylesheet" href="swatches.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <a class="brand" href="./">
+      <picture>
+        <source srcset="../logo/sightpress-logo-dark.svg" media="(prefers-color-scheme: dark)">
+        <img src="../logo/sightpress-logo.svg" width="200" height="42" alt="SightPress brand guide home">
+      </picture>
+    </a>
+    <nav aria-label="Brand guide sections">
+      <ul>
+        <li><a href="#idea">Idea</a></li>
+        <li><a href="#logo">Logo</a></li>
+        <li><a href="#colour">Colour</a></li>
+        <li><a href="#type">Type</a></li>
+        <li><a href="#icons">Icons</a></li>
+        <li><a href="#social">Social</a></li>
+        <li><a href="#sound">Sound</a></li>
+        <li><a href="#components">Components</a></li>
+        <li><a href="#voice">Voice</a></li>
+        <li><a href="#contact">Official addresses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="hero">
+      <h1>The SightPress brand guide</h1>
+      <p class="motto">Beyond sight<span class="motto-stop">.</span></p>
+      <p class="lede">A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind. The brand has to look as good as it works, so every colour, typeface and icon here was chosen to be both beautiful and accessible.</p>
+    </div>
+
+    <section aria-labelledby="idea">
+      <h2 id="idea">The idea: a point of perception</h2>
+      <p>The mark is a single, confident “S” with an amber dot resting in its upper curve, like a pupil in an eye. The dot is the point where content is perceived, whether by eye, by ear through a screen reader, or by touch on a braille display. The S is drawn as one continuous stroke, like a line of text flowing down a page.</p>
+      <p>Three ideas guide every brand decision:</p>
+      <ul>
+        <li><strong>Clear first.</strong> Legibility, contrast and plain words come before decoration.</li>
+        <li><strong>Warm, not clinical.</strong> Accessibility is the floor, not the ceiling: rich colour, generous space and a characterful display face.</li>
+        <li><strong>Said in words.</strong> Nothing is carried by colour or shape alone. Status, warnings and choices always have text.</li>
+      </ul>
+      <h3>The motto: “Beyond sight.”</h3>
+      <p>Two words for what SightPress is for: publishing that reaches people however they take it in, by eye, by ear or by touch, and a brand that goes further than how things look. Write it in sentence case with its full stop, which stands for the amber dot. Where the brand palette is on a dark background, the full stop can be amber; on light backgrounds it takes the text colour, because amber is never text on light. Next to the logo, the motto sits under or after the wordmark in the display face, never inside the logo itself.</p>
+      <p>The motto leads the <a href="#social">share cards</a> that preview SightPress links. Keep the motto in English in every locale, like the name; when a translation is needed for meaning, add it as a separate line with its own <code>lang</code>.</p>
+    </section>
+
+    <section aria-labelledby="logo">
+      <h2 id="logo">Logo</h2>
+      <p>Use the SVG files in <code>logo/</code>. Every file has the accessible name “SightPress”. When the logo is a link, give the link a name that says where it goes, such as “SightPress home”.</p>
+
+      <div class="grid">
+        <div class="card"><figure>
+          <div class="logo-stage stage-paper"><img src="../logo/sightpress-logo.svg" width="320" height="67" alt="SightPress logo on a light background"></div>
+          <figcaption>Primary logo, for light backgrounds. <code>sightpress-logo.svg</code></figcaption>
+        </figure></div>
+        <div class="card"><figure>
+          <div class="logo-stage stage-ink"><img src="../logo/sightpress-logo-dark.svg" width="320" height="67" alt="SightPress logo on a dark background"></div>
+          <figcaption>Dark logo, for ink and dark-mode backgrounds. <code>sightpress-logo-dark.svg</code></figcaption>
+        </figure></div>
+        <div class="card"><figure>
+          <div class="logo-stage stage-paper"><img src="../logo/sightpress-logo-stacked.svg" width="200" height="155" alt="SightPress stacked logo"></div>
+          <figcaption>Stacked logo, for square spaces. <code>sightpress-logo-stacked.svg</code></figcaption>
+        </figure></div>
+        <div class="card"><figure>
+          <div class="logo-stage stage-mono"><img src="../logo/sightpress-logo-mono.svg" width="320" height="67" alt="SightPress single-colour logo"></div>
+          <figcaption>Single colour, for print, embossing and forced colours. It uses <code>currentColor</code> when inlined. <code>sightpress-logo-mono.svg</code></figcaption>
+        </figure></div>
+      </div>
+
+      <h3>Clear space and size</h3>
+      <ul>
+        <li>Keep clear space around the logo equal to the height of the amber dot multiplied by four (a quarter of the mark’s height).</li>
+        <li>Smallest horizontal logo: 120 CSS pixels wide on screen, 30 mm in print. Below that, use the mark alone.</li>
+        <li>Smallest mark: 16 pixels (favicon). The mark always keeps its rounded tile.</li>
+      </ul>
+
+      <div class="do-dont">
+        <div class="card do">
+          <h4><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-success"/></svg>Do</h4>
+          <ul>
+            <li>Use the primary logo on paper or white, and the dark logo on ink.</li>
+            <li>Use the single-colour logo when only one colour is available.</li>
+            <li>Give it room: generous clear space makes it look confident.</li>
+          </ul>
+        </div>
+        <div class="card dont">
+          <h4><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-error"/></svg>Don’t</h4>
+          <ul>
+            <li>Recolour the wordmark or the dot, or put the logo on a busy photo.</li>
+            <li>Stretch, rotate, outline or add effects such as shadows or glows.</li>
+            <li>Retype the wordmark in another font; always use the files.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Logo colour contrast</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Logo colour contrast table">
+    <!-- build:brand -->
+    <table>
+      <caption>Logo colours: 12 pairs checked</caption>
+      <thead><tr><th scope="col">Part</th><th scope="col">Colours</th><th scope="col">Contrast</th><th scope="col">Result</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">The S on the mark's tile</th><td><span class="swatch sw-FBFAF7"></span>#FBFAF7 on <span class="swatch sw-3D2FC4"></span>#3D2FC4</td><td>8.38 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">The amber dot on the mark's tile</th><td><span class="swatch sw-FFB938"></span>#FFB938 on <span class="swatch sw-3D2FC4"></span>#3D2FC4</td><td>5.10 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">"Sight" in the logo, light</th><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>17.27 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">"Press" in the logo, light</th><td><span class="swatch sw-3D2FC4"></span>#3D2FC4 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>8.38 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">"Sight" in the logo, dark</th><td><span class="swatch sw-FBFAF7"></span>#FBFAF7 on <span class="swatch sw-101430"></span>#101430</td><td>17.27 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">"Press" in the logo, dark</th><td><span class="swatch sw-ADA5FF"></span>#ADA5FF on <span class="swatch sw-101430"></span>#101430</td><td>8.24 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Social images: "Sight" and the headline, violet end of the background</th><td><span class="swatch sw-FBFAF7"></span>#FBFAF7 on <span class="swatch sw-160F4A"></span>#160F4A</td><td>16.75 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Social images: "Press", violet end of the background</th><td><span class="swatch sw-ADA5FF"></span>#ADA5FF on <span class="swatch sw-160F4A"></span>#160F4A</td><td>7.99 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Social images: the line under the headline, ink end of the background</th><td><span class="swatch sw-E6E3FF"></span>#E6E3FF on <span class="swatch sw-101430"></span>#101430</td><td>14.42 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Social images: the line under the headline, violet end of the background</th><td><span class="swatch sw-E6E3FF"></span>#E6E3FF on <span class="swatch sw-160F4A"></span>#160F4A</td><td>13.98 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Social images: the amber full stop, ink end of the background</th><td><span class="swatch sw-FFB938"></span>#FFB938 on <span class="swatch sw-101430"></span>#101430</td><td>10.52 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Social images: the amber full stop, violet end of the background</th><td><span class="swatch sw-FFB938"></span>#FFB938 on <span class="swatch sw-160F4A"></span>#160F4A</td><td>10.20 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+      </tbody>
+    </table>
+    <!-- /build:brand -->
+      </div>
+    </section>
+
+    <section aria-labelledby="colour">
+      <h2 id="colour">Colour</h2>
+      <p><strong>Iris</strong> is the brand: a deep blue-violet, confident without being corporate. <strong>Lumen</strong>, the amber of the dot, is the spark, used sparingly for highlights and never as text on a light background. <strong>Lagoon</strong> supports it in illustration and charts. <strong>Ink</strong> and <strong>paper</strong> are the neutrals: a warm off-white and a deep blue-black, softer on the eyes than pure black on white.</p>
+      <p>Use the semantic tokens (<code>--sp-color-text</code>, <code>--sp-color-accent</code> and the rest), not the palette directly. They switch automatically for dark mode and for “increase contrast” settings.</p>
+
+      <h3>Checked colour pairs</h3>
+      <p>The build fails if any pair falls below its minimum. Body text, links and help text reach AAA (at least 7 to 1) in both schemes.</p>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Checked colour pairs tables">
+    <!-- build:pairs -->
+    <table>
+      <caption>Light scheme: 26 colour pairs checked</caption>
+      <thead><tr><th scope="col">Use</th><th scope="col">Tokens</th><th scope="col">Colours</th><th scope="col">Contrast</th><th scope="col">Result</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Body text</th><td><code>text</code> on <code>bg</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>17.27 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Body text on cards</th><td><code>text</code> on <code>surface</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FFFFFF"></span>#FFFFFF</td><td>18.03 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Body text on sunken panels</th><td><code>text</code> on <code>surface-sunken</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-F2F0E9"></span>#F2F0E9</td><td>15.81 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Help text and metadata</th><td><code>text-muted</code> on <code>bg</code></td><td><span class="swatch sw-4A4F6A"></span>#4A4F6A on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>7.69 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Help text on cards</th><td><code>text-muted</code> on <code>surface</code></td><td><span class="swatch sw-4A4F6A"></span>#4A4F6A on <span class="swatch sw-FFFFFF"></span>#FFFFFF</td><td>8.02 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Links</th><td><code>link</code> on <code>bg</code></td><td><span class="swatch sw-3D2FC4"></span>#3D2FC4 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>8.38 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Links on cards</th><td><code>link</code> on <code>surface</code></td><td><span class="swatch sw-3D2FC4"></span>#3D2FC4 on <span class="swatch sw-FFFFFF"></span>#FFFFFF</td><td>8.74 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Visited links</th><td><code>link-visited</code> on <code>bg</code></td><td><span class="swatch sw-0B6B63"></span>#0B6B63 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>6.10 to 1</td><td>Passed (needs 4.5 to 1)</td></tr>
+        <tr><th scope="row">Brand-coloured text and icons</th><td><code>accent</code> on <code>bg</code></td><td><span class="swatch sw-3D2FC4"></span>#3D2FC4 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>8.38 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Text on primary buttons</th><td><code>on-accent</code> on <code>accent</code></td><td><span class="swatch sw-FFFFFF"></span>#FFFFFF on <span class="swatch sw-3D2FC4"></span>#3D2FC4</td><td>8.74 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Text on hovered primary buttons</th><td><code>on-accent</code> on <code>accent-hover</code></td><td><span class="swatch sw-FFFFFF"></span>#FFFFFF on <span class="swatch sw-30259A"></span>#30259A</td><td>11.31 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Selected item text</th><td><code>accent</code> on <code>accent-subtle</code></td><td><span class="swatch sw-3D2FC4"></span>#3D2FC4 on <span class="swatch sw-F3F2FF"></span>#F3F2FF</td><td>7.89 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Text on amber highlights</th><td><code>on-highlight</code> on <code>highlight</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FFB938"></span>#FFB938</td><td>10.52 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Form field borders</th><td><code>border-strong</code> on <code>bg</code></td><td><span class="swatch sw-6A7089"></span>#6A7089 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>4.69 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Form field borders on cards</th><td><code>border-strong</code> on <code>surface</code></td><td><span class="swatch sw-6A7089"></span>#6A7089 on <span class="swatch sw-FFFFFF"></span>#FFFFFF</td><td>4.89 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus ring</th><td><code>focus</code> on <code>bg</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>17.27 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus ring on cards</th><td><code>focus</code> on <code>surface</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FFFFFF"></span>#FFFFFF</td><td>18.03 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus ring against its halo</th><td><code>focus</code> on <code>focus-halo</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FFC95C"></span>#FFC95C</td><td>11.81 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus halo between the ring and a primary button</th><td><code>focus-halo</code> on <code>accent</code></td><td><span class="swatch sw-FFC95C"></span>#FFC95C on <span class="swatch sw-3D2FC4"></span>#3D2FC4</td><td>5.73 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Success text</th><td><code>success</code> on <code>bg</code></td><td><span class="swatch sw-105E33"></span>#105E33 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>7.53 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Success message</th><td><code>success</code> on <code>success-subtle</code></td><td><span class="swatch sw-105E33"></span>#105E33 on <span class="swatch sw-E8F6EE"></span>#E8F6EE</td><td>7.06 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Warning text</th><td><code>warning</code> on <code>bg</code></td><td><span class="swatch sw-7A4A00"></span>#7A4A00 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>7.17 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Warning message</th><td><code>warning</code> on <code>warning-subtle</code></td><td><span class="swatch sw-7A4A00"></span>#7A4A00 on <span class="swatch sw-FFF8EB"></span>#FFF8EB</td><td>7.08 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Error text</th><td><code>danger</code> on <code>bg</code></td><td><span class="swatch sw-9A1B12"></span>#9A1B12 on <span class="swatch sw-FBFAF7"></span>#FBFAF7</td><td>7.92 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Error message</th><td><code>danger</code> on <code>danger-subtle</code></td><td><span class="swatch sw-9A1B12"></span>#9A1B12 on <span class="swatch sw-FDECEA"></span>#FDECEA</td><td>7.23 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Information message</th><td><code>info</code> on <code>info-subtle</code></td><td><span class="swatch sw-3D2FC4"></span>#3D2FC4 on <span class="swatch sw-F3F2FF"></span>#F3F2FF</td><td>7.89 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Dark scheme: 26 colour pairs checked</caption>
+      <thead><tr><th scope="col">Use</th><th scope="col">Tokens</th><th scope="col">Colours</th><th scope="col">Contrast</th><th scope="col">Result</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Body text</th><td><code>text</code> on <code>bg</code></td><td><span class="swatch sw-F2F0E9"></span>#F2F0E9 on <span class="swatch sw-101430"></span>#101430</td><td>15.81 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Body text on cards</th><td><code>text</code> on <code>surface</code></td><td><span class="swatch sw-F2F0E9"></span>#F2F0E9 on <span class="swatch sw-171B36"></span>#171B36</td><td>14.77 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Body text on sunken panels</th><td><code>text</code> on <code>surface-sunken</code></td><td><span class="swatch sw-F2F0E9"></span>#F2F0E9 on <span class="swatch sw-0A0D22"></span>#0A0D22</td><td>16.84 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Help text and metadata</th><td><code>text-muted</code> on <code>bg</code></td><td><span class="swatch sw-B9BCD0"></span>#B9BCD0 on <span class="swatch sw-101430"></span>#101430</td><td>9.59 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Help text on cards</th><td><code>text-muted</code> on <code>surface</code></td><td><span class="swatch sw-B9BCD0"></span>#B9BCD0 on <span class="swatch sw-171B36"></span>#171B36</td><td>8.96 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Links</th><td><code>link</code> on <code>bg</code></td><td><span class="swatch sw-ADA5FF"></span>#ADA5FF on <span class="swatch sw-101430"></span>#101430</td><td>8.24 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Links on cards</th><td><code>link</code> on <code>surface</code></td><td><span class="swatch sw-ADA5FF"></span>#ADA5FF on <span class="swatch sw-171B36"></span>#171B36</td><td>7.70 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Visited links</th><td><code>link-visited</code> on <code>bg</code></td><td><span class="swatch sw-5FD4C6"></span>#5FD4C6 on <span class="swatch sw-101430"></span>#101430</td><td>10.06 to 1</td><td>Passed (needs 4.5 to 1)</td></tr>
+        <tr><th scope="row">Brand-coloured text and icons</th><td><code>accent</code> on <code>bg</code></td><td><span class="swatch sw-ADA5FF"></span>#ADA5FF on <span class="swatch sw-101430"></span>#101430</td><td>8.24 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Text on primary buttons</th><td><code>on-accent</code> on <code>accent</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-ADA5FF"></span>#ADA5FF</td><td>8.24 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Text on hovered primary buttons</th><td><code>on-accent</code> on <code>accent-hover</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-CFCBFF"></span>#CFCBFF</td><td>11.71 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Selected item text</th><td><code>accent</code> on <code>accent-subtle</code></td><td><span class="swatch sw-ADA5FF"></span>#ADA5FF on <span class="swatch sw-160F4A"></span>#160F4A</td><td>7.99 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Text on amber highlights</th><td><code>on-highlight</code> on <code>highlight</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-FFB938"></span>#FFB938</td><td>10.52 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Form field borders</th><td><code>border-strong</code> on <code>bg</code></td><td><span class="swatch sw-8A8FA8"></span>#8A8FA8 on <span class="swatch sw-101430"></span>#101430</td><td>5.64 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Form field borders on cards</th><td><code>border-strong</code> on <code>surface</code></td><td><span class="swatch sw-8A8FA8"></span>#8A8FA8 on <span class="swatch sw-171B36"></span>#171B36</td><td>5.27 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus ring</th><td><code>focus</code> on <code>bg</code></td><td><span class="swatch sw-FFC95C"></span>#FFC95C on <span class="swatch sw-101430"></span>#101430</td><td>11.81 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus ring on cards</th><td><code>focus</code> on <code>surface</code></td><td><span class="swatch sw-FFC95C"></span>#FFC95C on <span class="swatch sw-171B36"></span>#171B36</td><td>11.04 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus ring against its halo</th><td><code>focus</code> on <code>focus-halo</code></td><td><span class="swatch sw-FFC95C"></span>#FFC95C on <span class="swatch sw-101430"></span>#101430</td><td>11.81 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Focus halo between the ring and a primary button</th><td><code>focus-halo</code> on <code>accent</code></td><td><span class="swatch sw-101430"></span>#101430 on <span class="swatch sw-ADA5FF"></span>#ADA5FF</td><td>8.24 to 1</td><td>Passed (needs 3 to 1)</td></tr>
+        <tr><th scope="row">Success text</th><td><code>success</code> on <code>bg</code></td><td><span class="swatch sw-6EDB9A"></span>#6EDB9A on <span class="swatch sw-101430"></span>#101430</td><td>10.53 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Success message</th><td><code>success</code> on <code>success-subtle</code></td><td><span class="swatch sw-6EDB9A"></span>#6EDB9A on <span class="swatch sw-0B2A18"></span>#0B2A18</td><td>9.03 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Warning text</th><td><code>warning</code> on <code>bg</code></td><td><span class="swatch sw-FFC95C"></span>#FFC95C on <span class="swatch sw-101430"></span>#101430</td><td>11.81 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Warning message</th><td><code>warning</code> on <code>warning-subtle</code></td><td><span class="swatch sw-FFC95C"></span>#FFC95C on <span class="swatch sw-3A2200"></span>#3A2200</td><td>9.77 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Error text</th><td><code>danger</code> on <code>bg</code></td><td><span class="swatch sw-FF9C8F"></span>#FF9C8F on <span class="swatch sw-101430"></span>#101430</td><td>8.93 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Error message</th><td><code>danger</code> on <code>danger-subtle</code></td><td><span class="swatch sw-FF9C8F"></span>#FF9C8F on <span class="swatch sw-3A0D09"></span>#3A0D09</td><td>8.38 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+        <tr><th scope="row">Information message</th><td><code>info</code> on <code>info-subtle</code></td><td><span class="swatch sw-ADA5FF"></span>#ADA5FF on <span class="swatch sw-160F4A"></span>#160F4A</td><td>7.99 to 1</td><td>Passed (needs 7 to 1)</td></tr>
+      </tbody>
+    </table>
+    <!-- /build:pairs -->
+      </div>
+
+      <h3>Palette</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Palette tables">
+    <!-- build:families -->
+    <h4>Iris</h4>
+    <p>Primary brand colour: a deep, confident blue-violet.</p>
+    <table>
+      <caption>Iris: 11 shades, with contrast against paper and ink</caption>
+      <thead><tr><th scope="col">Token</th><th scope="col">Hex</th><th scope="col">On paper (#FBFAF7)</th><th scope="col">On ink (#101430)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="swatch sw-F3F2FF"></span><code>--sp-iris-50</code></th><td><code>#F3F2FF</code></td><td>1.06 to 1, Fails</td><td>16.27 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-E6E3FF"></span><code>--sp-iris-100</code></th><td><code>#E6E3FF</code></td><td>1.20 to 1, Fails</td><td>14.42 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-CFCBFF"></span><code>--sp-iris-200</code></th><td><code>#CFCBFF</code></td><td>1.48 to 1, Fails</td><td>11.71 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-ADA5FF"></span><code>--sp-iris-300</code></th><td><code>#ADA5FF</code></td><td>2.10 to 1, Fails</td><td>8.24 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-8B80FA"></span><code>--sp-iris-400</code></th><td><code>#8B80FA</code></td><td>3.06 to 1, AA large text and non-text</td><td>5.64 to 1, AA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-6A5CF5"></span><code>--sp-iris-500</code></th><td><code>#6A5CF5</code></td><td>4.51 to 1, AA</td><td>3.83 to 1, AA large text and non-text</td></tr>
+        <tr><th scope="row"><span class="swatch sw-4A3DE0"></span><code>--sp-iris-600</code></th><td><code>#4A3DE0</code></td><td>6.63 to 1, AA</td><td>2.61 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-3D2FC4"></span><code>--sp-iris-700</code></th><td><code>#3D2FC4</code></td><td>8.38 to 1, AAA</td><td>2.06 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-30259A"></span><code>--sp-iris-800</code></th><td><code>#30259A</code></td><td>10.83 to 1, AAA</td><td>1.59 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-241C73"></span><code>--sp-iris-900</code></th><td><code>#241C73</code></td><td>13.51 to 1, AAA</td><td>1.28 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-160F4A"></span><code>--sp-iris-950</code></th><td><code>#160F4A</code></td><td>16.75 to 1, AAA</td><td>1.03 to 1, Fails</td></tr>
+      </tbody>
+    </table>
+    <h4>Lumen</h4>
+    <p>Accent: warm amber, the dot in the mark. Never used for text on light backgrounds.</p>
+    <table>
+      <caption>Lumen: 11 shades, with contrast against paper and ink</caption>
+      <thead><tr><th scope="col">Token</th><th scope="col">Hex</th><th scope="col">On paper (#FBFAF7)</th><th scope="col">On ink (#101430)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="swatch sw-FFF8EB"></span><code>--sp-lumen-50</code></th><td><code>#FFF8EB</code></td><td>1.01 to 1, Fails</td><td>17.07 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-FFEDC7"></span><code>--sp-lumen-100</code></th><td><code>#FFEDC7</code></td><td>1.11 to 1, Fails</td><td>15.62 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-FFDB8F"></span><code>--sp-lumen-200</code></th><td><code>#FFDB8F</code></td><td>1.27 to 1, Fails</td><td>13.55 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-FFC95C"></span><code>--sp-lumen-300</code></th><td><code>#FFC95C</code></td><td>1.46 to 1, Fails</td><td>11.81 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-FFB938"></span><code>--sp-lumen-400</code></th><td><code>#FFB938</code></td><td>1.64 to 1, Fails</td><td>10.52 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-F2A20C"></span><code>--sp-lumen-500</code></th><td><code>#F2A20C</code></td><td>2.02 to 1, Fails</td><td>8.54 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-C98200"></span><code>--sp-lumen-600</code></th><td><code>#C98200</code></td><td>3.01 to 1, AA large text and non-text</td><td>5.73 to 1, AA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-9E6400"></span><code>--sp-lumen-700</code></th><td><code>#9E6400</code></td><td>4.70 to 1, AA</td><td>3.67 to 1, AA large text and non-text</td></tr>
+        <tr><th scope="row"><span class="swatch sw-7A4A00"></span><code>--sp-lumen-800</code></th><td><code>#7A4A00</code></td><td>7.17 to 1, AAA</td><td>2.41 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-5C3700"></span><code>--sp-lumen-900</code></th><td><code>#5C3700</code></td><td>10.05 to 1, AAA</td><td>1.72 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-3A2200"></span><code>--sp-lumen-950</code></th><td><code>#3A2200</code></td><td>14.28 to 1, AAA</td><td>1.21 to 1, Fails</td></tr>
+      </tbody>
+    </table>
+    <h4>Lagoon</h4>
+    <p>Secondary: a calm teal for supporting illustration, charts and visited links.</p>
+    <table>
+      <caption>Lagoon: 11 shades, with contrast against paper and ink</caption>
+      <thead><tr><th scope="col">Token</th><th scope="col">Hex</th><th scope="col">On paper (#FBFAF7)</th><th scope="col">On ink (#101430)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="swatch sw-EEFBF9"></span><code>--sp-lagoon-50</code></th><td><code>#EEFBF9</code></td><td>1.02 to 1, Fails</td><td>17.00 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-CCF3EE"></span><code>--sp-lagoon-100</code></th><td><code>#CCF3EE</code></td><td>1.14 to 1, Fails</td><td>15.13 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-9BE7DD"></span><code>--sp-lagoon-200</code></th><td><code>#9BE7DD</code></td><td>1.35 to 1, Fails</td><td>12.76 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-5FD4C6"></span><code>--sp-lagoon-300</code></th><td><code>#5FD4C6</code></td><td>1.72 to 1, Fails</td><td>10.06 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-2DB8A9"></span><code>--sp-lagoon-400</code></th><td><code>#2DB8A9</code></td><td>2.36 to 1, Fails</td><td>7.33 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-129C8E"></span><code>--sp-lagoon-500</code></th><td><code>#129C8E</code></td><td>3.26 to 1, AA large text and non-text</td><td>5.30 to 1, AA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-0E7F75"></span><code>--sp-lagoon-600</code></th><td><code>#0E7F75</code></td><td>4.67 to 1, AA</td><td>3.70 to 1, AA large text and non-text</td></tr>
+        <tr><th scope="row"><span class="swatch sw-0B6B63"></span><code>--sp-lagoon-700</code></th><td><code>#0B6B63</code></td><td>6.10 to 1, AA</td><td>2.83 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-0A5550"></span><code>--sp-lagoon-800</code></th><td><code>#0A5550</code></td><td>8.29 to 1, AAA</td><td>2.08 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-08413D"></span><code>--sp-lagoon-900</code></th><td><code>#08413D</code></td><td>10.97 to 1, AAA</td><td>1.57 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-042826"></span><code>--sp-lagoon-950</code></th><td><code>#042826</code></td><td>15.05 to 1, AAA</td><td>1.15 to 1, Fails</td></tr>
+      </tbody>
+    </table>
+    <h4>Ink</h4>
+    <p>Neutrals, from warm paper to deep blue-black ink.</p>
+    <table>
+      <caption>Ink: 13 shades, with contrast against paper and ink</caption>
+      <thead><tr><th scope="col">Token</th><th scope="col">Hex</th><th scope="col">On paper (#FBFAF7)</th><th scope="col">On ink (#101430)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="swatch sw-FFFFFF"></span><code>--sp-ink-0</code></th><td><code>#FFFFFF</code></td><td>1.04 to 1, Fails</td><td>18.03 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-FBFAF7"></span><code>--sp-ink-50</code></th><td><code>#FBFAF7</code></td><td>1.00 to 1, Fails</td><td>17.27 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-F2F0E9"></span><code>--sp-ink-100</code></th><td><code>#F2F0E9</code></td><td>1.09 to 1, Fails</td><td>15.81 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-E2E0D8"></span><code>--sp-ink-200</code></th><td><code>#E2E0D8</code></td><td>1.27 to 1, Fails</td><td>13.64 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-B9BCD0"></span><code>--sp-ink-300</code></th><td><code>#B9BCD0</code></td><td>1.80 to 1, Fails</td><td>9.59 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-8A8FA8"></span><code>--sp-ink-400</code></th><td><code>#8A8FA8</code></td><td>3.06 to 1, AA large text and non-text</td><td>5.64 to 1, AA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-6A7089"></span><code>--sp-ink-500</code></th><td><code>#6A7089</code></td><td>4.69 to 1, AA</td><td>3.68 to 1, AA large text and non-text</td></tr>
+        <tr><th scope="row"><span class="swatch sw-4A4F6A"></span><code>--sp-ink-600</code></th><td><code>#4A4F6A</code></td><td>7.69 to 1, AAA</td><td>2.25 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-353A55"></span><code>--sp-ink-700</code></th><td><code>#353A55</code></td><td>10.66 to 1, AAA</td><td>1.62 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-242842"></span><code>--sp-ink-800</code></th><td><code>#242842</code></td><td>13.81 to 1, AAA</td><td>1.25 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-171B36"></span><code>--sp-ink-900</code></th><td><code>#171B36</code></td><td>16.14 to 1, AAA</td><td>1.07 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-101430"></span><code>--sp-ink-950</code></th><td><code>#101430</code></td><td>17.27 to 1, AAA</td><td>1.00 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-0A0D22"></span><code>--sp-ink-1000</code></th><td><code>#0A0D22</code></td><td>18.40 to 1, AAA</td><td>1.07 to 1, Fails</td></tr>
+      </tbody>
+    </table>
+    <h4>Green</h4>
+    <table>
+      <caption>Green: 4 shades, with contrast against paper and ink</caption>
+      <thead><tr><th scope="col">Token</th><th scope="col">Hex</th><th scope="col">On paper (#FBFAF7)</th><th scope="col">On ink (#101430)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="swatch sw-E8F6EE"></span><code>--sp-green-50</code></th><td><code>#E8F6EE</code></td><td>1.07 to 1, Fails</td><td>16.18 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-6EDB9A"></span><code>--sp-green-300</code></th><td><code>#6EDB9A</code></td><td>1.64 to 1, Fails</td><td>10.53 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-105E33"></span><code>--sp-green-700</code></th><td><code>#105E33</code></td><td>7.53 to 1, AAA</td><td>2.29 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-0B2A18"></span><code>--sp-green-950</code></th><td><code>#0B2A18</code></td><td>14.81 to 1, AAA</td><td>1.17 to 1, Fails</td></tr>
+      </tbody>
+    </table>
+    <h4>Red</h4>
+    <table>
+      <caption>Red: 4 shades, with contrast against paper and ink</caption>
+      <thead><tr><th scope="col">Token</th><th scope="col">Hex</th><th scope="col">On paper (#FBFAF7)</th><th scope="col">On ink (#101430)</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><span class="swatch sw-FDECEA"></span><code>--sp-red-50</code></th><td><code>#FDECEA</code></td><td>1.10 to 1, Fails</td><td>15.77 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-FF9C8F"></span><code>--sp-red-300</code></th><td><code>#FF9C8F</code></td><td>1.93 to 1, Fails</td><td>8.93 to 1, AAA</td></tr>
+        <tr><th scope="row"><span class="swatch sw-9A1B12"></span><code>--sp-red-700</code></th><td><code>#9A1B12</code></td><td>7.92 to 1, AAA</td><td>2.18 to 1, Fails</td></tr>
+        <tr><th scope="row"><span class="swatch sw-3A0D09"></span><code>--sp-red-950</code></th><td><code>#3A0D09</code></td><td>16.21 to 1, AAA</td><td>1.07 to 1, Fails</td></tr>
+      </tbody>
+    </table>
+    <!-- /build:families -->
+      </div>
+    </section>
+
+    <section aria-labelledby="type">
+      <h2 id="type">Type</h2>
+      <p>Two families for Latin scripts, plus companions for Arabic and Hebrew, all free under the SIL Open Font License and self-hosted, so there are no third-party requests.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Fraunces</h3>
+          <p class="specimen specimen-display">Stories for every reader</p>
+          <p>Display and headings, 28 pixels and up. A warm, soft serif that gives SightPress its character. Used at weight 640 with the “soft” cut.</p>
+        </div>
+        <div class="card">
+          <h3>Atkinson Hyperlegible Next</h3>
+          <p class="specimen specimen-text">Il1 O0 rn m 6b 9g</p>
+          <p>Body text and interface. Designed with the Braille Institute so that easily confused characters stay distinct for low-vision readers.</p>
+        </div>
+        <div class="card">
+          <h3>Atkinson Hyperlegible Mono</h3>
+          <p class="specimen specimen-mono">media:01J9Z…</p>
+          <p>Code, identifiers and tokens.</p>
+        </div>
+      </div>
+
+      <h3>Scale</h3>
+      <p>A major-third scale from an 18-pixel body size, set in <code>rem</code> so the reader’s browser settings always win. Lines are at most 66 characters long, with 1.6 line spacing.</p>
+      <ul class="scale">
+        <li><span>Step 6, <code>h1</code> and display</span><strong class="scale-sample scale-6">Aa Bb Cc</strong></li>
+        <li><span>Step 4, <code>h2</code></span><strong class="scale-sample scale-4">Publish with confidence</strong></li>
+        <li><span>Step 2, <code>h3</code></span><strong class="scale-sample scale-2">Describe every image</strong></li>
+        <li><span>Step 0, body</span>Every page you publish is checked for alt text, headings and contrast before it goes live.</li>
+      </ul>
+
+      <h3 id="arabic-hebrew">Arabic and Hebrew</h3>
+      <p>The brand fonts cover Latin scripts only, so Arabic (<code>ar-SA</code>) and Hebrew (<code>he-IL</code>) each get two self-hosted companions, also under the SIL Open Font License, picked to match the brand fonts. They sit right after the brand font in every stack and only download when a page contains their script.</p>
+      <div class="grid grid-pairs">
+        <div class="card">
+          <h4>Noto Naskh Arabic, display</h4>
+          <p class="specimen specimen-display" lang="ar" dir="rtl">قصص لكل قارئ</p>
+          <p>Headings in Arabic. A classic Naskh, the calligraphic style Arabic readers know from books, playing the part Fraunces plays in Latin.</p>
+        </div>
+        <div class="card">
+          <h4>Noto Sans Arabic, text</h4>
+          <p class="specimen specimen-text" lang="ar" dir="rtl">انشر لكل قارئ</p>
+          <p>Body text and interface in Arabic. Open, even letterforms with clear dots, a calm match for Atkinson Hyperlegible Next.</p>
+        </div>
+        <div class="card">
+          <h4>Frank Ruhl Libre, display</h4>
+          <p class="specimen specimen-display" lang="he" dir="rtl">סיפורים לכל קורא</p>
+          <p>Headings in Hebrew. A modern revival of the classic Hebrew book face, with the same warmth as Fraunces.</p>
+        </div>
+        <div class="card">
+          <h4>Noto Sans Hebrew, text</h4>
+          <p class="specimen specimen-text" lang="he" dir="rtl">פרסמו לכל קורא</p>
+          <p>Body text and interface in Hebrew. Clear, open letterforms at the same weights as Atkinson Hyperlegible Next.</p>
+        </div>
+      </div>
+      <ul>
+        <li>Mark every Arabic or Hebrew passage with <code>lang</code> and <code>dir</code>, so the right font, direction and screen-reader voice are used.</li>
+        <li>No letter-spacing on Arabic: tracking breaks the joins between letters. Give Arabic headings snug line spacing (1.3), not tight.</li>
+        <li>Neither script has italics. The companions never draw a fake slant; use bold or quotation marks for emphasis instead.</li>
+        <li>Code and identifiers stay in Atkinson Hyperlegible Mono; Arabic or Hebrew inside code uses the text companion.</li>
+      </ul>
+
+      <h3>Other scripts</h3>
+      <p>Every font stack ends with good system and Noto fonts for CJK and Devanagari (and for Arabic and Hebrew, if the self-hosted files fail to load), so non-Latin text never falls back to a mismatched font. Themes self-host the Noto subsets they need.</p>
+    </section>
+
+    <section aria-labelledby="icons">
+      <h2 id="icons">Icons</h2>
+      <p><span id="icon-count">54</span> icons on a 24-pixel grid, drawn with a 2-pixel round stroke in <code>currentColor</code>, so they always match the text beside them and follow forced colours.</p>
+      <ul>
+        <li>An icon never stands alone: it sits next to visible text and is hidden from screen readers with <code>aria-hidden="true"</code>.</li>
+        <li>If an icon-only button is truly unavoidable, the button gets a full accessible name (“Move ‘Opening hours’ up in Main menu”) and a visible tooltip on focus as well as hover.</li>
+        <li>Direction icons are named “back” and “forward”, not “left” and “right”, and mirror in right-to-left languages.</li>
+      </ul>
+      <ul class="icon-grid">
+        <!-- build:icons -->
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-accessibility"/></svg><code>accessibility</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-alt-text"/></svg><code>alt-text</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-archive"/></svg><code>archive</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-article"/></svg><code>article</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-audio"/></svg><code>audio</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-bell"/></svg><code>bell</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-braille"/></svg><code>braille</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-captions"/></svg><code>captions</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-check"/></svg><code>check</code></li>
+        <li><svg class="icon icon-mirror" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-chevron-back"/></svg><code>chevron-back</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-chevron-down"/></svg><code>chevron-down</code></li>
+        <li><svg class="icon icon-mirror" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-chevron-forward"/></svg><code>chevron-forward</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-close"/></svg><code>close</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-download"/></svg><code>download</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-edit"/></svg><code>edit</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-error"/></svg><code>error</code></li>
+        <li><svg class="icon icon-mirror" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-external-link"/></svg><code>external-link</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-help"/></svg><code>help</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-home"/></svg><code>home</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-image"/></svg><code>image</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-info"/></svg><code>info</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-keyboard"/></svg><code>keyboard</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-language"/></svg><code>language</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-layout"/></svg><code>layout</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-link"/></svg><code>link</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-lock"/></svg><code>lock</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-mail"/></svg><code>mail</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-menu"/></svg><code>menu</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-move-down"/></svg><code>move-down</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-move-up"/></svg><code>move-up</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-page"/></svg><code>page</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-passkey"/></svg><code>passkey</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-plugin"/></svg><code>plugin</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-plus"/></svg><code>plus</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-preview"/></svg><code>preview</code></li>
+        <li><svg class="icon icon-mirror" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-publish"/></svg><code>publish</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-review"/></svg><code>review</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-schedule"/></svg><code>schedule</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-screen-reader"/></svg><code>screen-reader</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-search"/></svg><code>search</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-settings"/></svg><code>settings</code></li>
+        <li><svg class="icon icon-mirror" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-sign-out"/></svg><code>sign-out</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-site"/></svg><code>site</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-sparkle-ai"/></svg><code>sparkle-ai</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-success"/></svg><code>success</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-theme"/></svg><code>theme</code></li>
+        <li><svg class="icon icon-mirror" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-transcript"/></svg><code>transcript</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-trash"/></svg><code>trash</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-upload"/></svg><code>upload</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-user"/></svg><code>user</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-users"/></svg><code>users</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-video"/></svg><code>video</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-warning"/></svg><code>warning</code></li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-widget"/></svg><code>widget</code></li>
+        <!-- /build:icons -->
+      </ul>
+    </section>
+
+    <section aria-labelledby="social">
+      <h2 id="social">Social images</h2>
+      <p>Link previews and profile covers for the project’s own accounts and website. They use the dark logo on a deep ink-to-violet background, with the S of the mark drawn large at the inline end and the amber dot glowing. The headline’s full stop is amber too: a small echo of the dot.</p>
+      <ul>
+        <li><strong>Always set the alt text.</strong> Every image comes with alt text in <code>social/social.json</code> that repeats every word drawn in it, and the build fails if a word is missing. Use it for <code>og:image:alt</code>, <code>twitter:image:alt</code> and the alt field each network offers when you upload.</li>
+        <li><strong>Never put the only copy of something in an image.</strong> Dates, links and calls to action go in the post text, where screen readers, translation and search can reach them.</li>
+        <li><strong>Text stays in the safe area.</strong> Each network crops covers differently and lays the profile picture over a corner; the build checks that the text fits inside each image’s safe area and never touches the decoration.</li>
+        <li><strong>Sites made with SightPress use their own branding.</strong> These images are for SightPress itself, like the logo.</li>
+      </ul>
+      <pre tabindex="0"><code>&lt;meta property="og:image" content="https://…/brand/social/sightpress-share-card.png"&gt;
+&lt;meta property="og:image:width" content="1200"&gt;
+&lt;meta property="og:image:height" content="630"&gt;
+&lt;meta property="og:image:alt" content="SightPress logo. Publish for every reader. …"&gt;
+&lt;meta name="twitter:card" content="summary_large_image"&gt;</code></pre>
+    <!-- build:social -->
+    <ul class="social-grid">
+      <li class="card"><figure>
+        <img src="../social/sightpress-share-card-motto.png" width="1200" height="630" alt="SightPress logo. Beyond sight. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind." loading="lazy">
+        <figcaption><strong>Motto share card</strong>, 1200 by 630 pixels. Link previews that lead with the motto: Open Graph (og:image), X and Bluesky large cards, Mastodon, LinkedIn posts, Slack and chat apps.<br>
+        <a href="../social/sightpress-share-card-motto.png" download>Download the motto share card image (PNG, 108 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-github-preview-motto.png" width="1280" height="640" alt="SightPress logo. Beyond sight. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind." loading="lazy">
+        <figcaption><strong>Motto GitHub social preview</strong>, 1280 by 640 pixels. GitHub repository social preview (Settings, Social preview) that leads with the motto.<br>
+        <a href="../social/sightpress-github-preview-motto.png" download>Download the motto GitHub social preview image (PNG, 116 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-share-card.png" width="1200" height="630" alt="SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind." loading="lazy">
+        <figcaption><strong>Share card</strong>, 1200 by 630 pixels. Link previews: Open Graph (og:image), X and Bluesky large cards, Mastodon, LinkedIn posts, Slack and chat apps.<br>
+        <a href="../social/sightpress-share-card.png" download>Download the share card image (PNG, 115 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-github-preview.png" width="1280" height="640" alt="SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind." loading="lazy">
+        <figcaption><strong>GitHub social preview</strong>, 1280 by 640 pixels. GitHub repository social preview (Settings, Social preview) for every sightpress repository.<br>
+        <a href="../social/sightpress-github-preview.png" download>Download the GitHub social preview image (PNG, 119 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-cover-x-mastodon.png" width="1500" height="500" alt="SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind." loading="lazy">
+        <figcaption><strong>Profile header for X, Mastodon and Bluesky</strong>, 1500 by 500 pixels. Profile header on X, Mastodon and Bluesky (3 to 1). The profile picture covers the lower inline-start corner, so the text sits above it.<br>
+        <a href="../social/sightpress-cover-x-mastodon.png" download>Download the profile header for X, Mastodon and Bluesky image (PNG, 94 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-cover-linkedin.png" width="1584" height="396" alt="SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind." loading="lazy">
+        <figcaption><strong>LinkedIn cover</strong>, 1584 by 396 pixels. LinkedIn page and profile cover (4 to 1). The page logo covers the lower inline-start corner on mobile.<br>
+        <a href="../social/sightpress-cover-linkedin.png" download>Download the LinkedIn cover image (PNG, 79 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-cover-facebook.png" width="1640" height="624" alt="SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind." loading="lazy">
+        <figcaption><strong>Facebook cover</strong>, 1640 by 624 pixels. Facebook page cover. Mobile crops the sides, so the text stays in the centre band.<br>
+        <a href="../social/sightpress-cover-facebook.png" download>Download the Facebook cover image (PNG, 118 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-cover-youtube.png" width="2560" height="1440" alt="SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind." loading="lazy">
+        <figcaption><strong>YouTube banner</strong>, 2560 by 1440 pixels. YouTube channel banner. Only the centre (1546 by 423 pixels) shows on every device, so the text stays inside it.<br>
+        <a href="../social/sightpress-cover-youtube.png" download>Download the YouTube banner image (PNG, 149 KB)</a></figcaption>
+      </figure></li>
+      <li class="card"><figure>
+        <img src="../social/sightpress-avatar.png" width="800" height="800" alt="SightPress logo" loading="lazy">
+        <figcaption><strong>Profile picture</strong>, 800 by 800 pixels. Profile picture on every network. The mark sits inside the circle that networks crop to.<br>
+        <a href="../social/sightpress-avatar.png" download>Download the profile picture image (PNG, 16 KB)</a></figcaption>
+      </figure></li>
+    </ul>
+    <!-- /build:social -->
+    </section>
+
+    <section aria-labelledby="sound">
+      <h2 id="sound">Sound</h2>
+      <p>Many SightPress creators and readers know the product by ear first, so the brand has a voice of its own. Every sound is synthesised by the build from <code>sound/sound.json</code>, in one key (D major pentatonic), from three voices: a soft mallet, a warm bell and a quiet chord. The bell is the sound of the amber dot. There are no third-party recordings.</p>
+      <ul>
+        <li><strong>Sound adds to words; it never replaces them.</strong> Every interface sound plays alongside a visible message and the same message in a live region. Someone who can’t hear it, or has sounds off, misses nothing.</li>
+        <li><strong>Off until someone turns it on.</strong> Interface sounds are a personal setting in the admin, off by default. Public pages never play sound, and nothing plays by itself.</li>
+        <li><strong>Short and quiet, under the screen reader.</strong> Interface sounds last at most 1 second and peak at −12 dBFS or lower, so they never cover the screen reader’s voice. The build fails if one is longer or louder.</li>
+        <li><strong>Told apart by shape, not just pitch.</strong> Success rises, error falls, warning repeats one note, a notification is one bell. Notes stay between 140 and 1,200 hertz, where most people with hearing loss still hear well, with no harsh highs.</li>
+        <li><strong>The sound logo is for media.</strong> Use it to open or close videos, podcasts and talks. Caption it as <code>[SightPress sound logo]</code>, so the sound is in the captions and transcript too.</li>
+      </ul>
+    <!-- build:sound -->
+    <ul class="sound-grid">
+      <li class="card">
+        <h3 id="sound-0">Sound logo</h3>
+        <p>Four soft mallet notes rise, dip once like the curve of the S, then land on a single warm bell, the amber dot, over a quiet chord, and fade out over the last second. 3.6 seconds.</p>
+        <p class="sound-use"><strong>Use:</strong> The opening or closing of videos, podcasts and talks. Never on web pages, never automatically.</p>
+        <audio controls preload="none" src="../sound/sightpress-sound-logo.wav" aria-labelledby="sound-0"></audio>
+        <p><a href="../sound/sightpress-sound-logo.wav" download>Download the sound logo (WAV, 338 KB)</a><br>Caption in videos: <code>[SightPress sound logo]</code></p>
+      </li>
+      <li class="card">
+        <h3 id="sound-1">Success</h3>
+        <p>Two quick mallet notes going up. 0.55 seconds.</p>
+        <p class="sound-use"><strong>Use:</strong> Something finished as asked: saved, published, sent.</p>
+        <audio controls preload="none" src="../sound/ui-success.wav" aria-labelledby="sound-1"></audio>
+        <p><a href="../sound/ui-success.wav" download>Download the “Success” sound (WAV, 52 KB)</a></p>
+      </li>
+      <li class="card">
+        <h3 id="sound-2">Error</h3>
+        <p>Two low, soft notes going down. Calm, never an alarm. 0.6 seconds.</p>
+        <p class="sound-use"><strong>Use:</strong> Something could not be done and needs the person’s attention, such as a form with errors.</p>
+        <audio controls preload="none" src="../sound/ui-error.wav" aria-labelledby="sound-2"></audio>
+        <p><a href="../sound/ui-error.wav" download>Download the “Error” sound (WAV, 56 KB)</a></p>
+      </li>
+      <li class="card">
+        <h3 id="sound-3">Warning</h3>
+        <p>The same middle note, tapped twice. 0.55 seconds.</p>
+        <p class="sound-use"><strong>Use:</strong> Something worth checking that does not block the person.</p>
+        <audio controls preload="none" src="../sound/ui-warning.wav" aria-labelledby="sound-3"></audio>
+        <p><a href="../sound/ui-warning.wav" download>Download the “Warning” sound (WAV, 52 KB)</a></p>
+      </li>
+      <li class="card">
+        <h3 id="sound-4">Notification</h3>
+        <p>A single bell, the sound of the amber dot. 0.9 seconds.</p>
+        <p class="sound-use"><strong>Use:</strong> Something new arrived: a comment, a review request, a finished import.</p>
+        <audio controls preload="none" src="../sound/ui-notification.wav" aria-labelledby="sound-4"></audio>
+        <p><a href="../sound/ui-notification.wav" download>Download the “Notification” sound (WAV, 84 KB)</a></p>
+      </li>
+      <li class="card">
+        <h3 id="sound-5">Published</h3>
+        <p>Three mallet notes rising quickly, then the bell. 0.95 seconds.</p>
+        <p class="sound-use"><strong>Use:</strong> A page or article went live. A short form of the sound logo.</p>
+        <audio controls preload="none" src="../sound/ui-publish.wav" aria-labelledby="sound-5"></audio>
+        <p><a href="../sound/ui-publish.wav" download>Download the “Published” sound (WAV, 89 KB)</a></p>
+      </li>
+    </ul>
+    <!-- /build:sound -->
+    </section>
+
+    <section aria-labelledby="components">
+      <h2 id="components">Components</h2>
+      <p>The building blocks of the admin and the default theme, shown with the tokens. Use the keyboard to see the focus ring: a dark ring with an amber halo that stands out on every background.</p>
+
+      <h3>Buttons</h3>
+      <div class="button-row">
+        <button class="button button-primary" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-publish"/></svg>Publish “About us”</button>
+        <button class="button button-secondary" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-preview"/></svg>Preview “About us”</button>
+      </div>
+
+      <h3>Messages</h3>
+      <div class="alert alert-success"><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-success"/></svg><p><strong>Published.</strong> “About us” is now live in English and Portuguese.</p></div>
+      <div class="alert alert-warning"><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-warning"/></svg><p><strong>Warning:</strong> 2 images have no long description. You can still publish.</p></div>
+      <div class="alert alert-danger"><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-error"/></svg><p><strong>Error:</strong> “Harbour at sunset” has no alt text, so this page can’t be published yet.</p></div>
+      <div class="alert alert-info"><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-info"/></svg><p><strong>Note:</strong> the French translation is 3 days older than the English source.</p></div>
+
+      <h3>Form field</h3>
+      <div>
+        <div class="field field-error">
+          <label for="alt">Alt text (required)</label>
+          <span class="hint" id="alt-hint">Describe what the image shows and why it’s there, in one or two sentences.</span>
+          <span class="error" id="alt-error"><svg class="icon" aria-hidden="true" focusable="false"><use href="../icons/sprite.svg#sp-icon-error"/></svg>Error: enter alt text for “Harbour at sunset”</span>
+          <input id="alt" name="alt" type="text" aria-describedby="alt-hint alt-error" aria-invalid="true">
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="voice">
+      <h2 id="voice">Voice</h2>
+      <ul>
+        <li><strong>Plain and kind.</strong> Short sentences, everyday words, no jargon. “Add alt text”, not “Remediate non-text content”.</li>
+        <li><strong>Say what happened and what to do next.</strong> “This page can’t be published yet: 1 image has no alt text.”</li>
+        <li><strong>Full names for actions.</strong> “Edit ‘About us’”, never just “Edit”.</li>
+        <li><strong>Confident, never boastful.</strong> SightPress is a powerful CMS for everyone; let the work show it.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Official addresses</h2>
+      <p>These are the only official SightPress addresses. Use them in materials, profiles and metadata, and treat any other address claiming to speak for SightPress with care.</p>
+      <ul>
+        <li><strong>Website:</strong> <a href="https://sightpress.org">https://sightpress.org</a></li>
+        <li><strong>Email:</strong> <a href="mailto:team@sightpress.org">team@sightpress.org</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>SightPress brand guide. <a href="https://sightpress.org">sightpress.org</a>, <a href="mailto:team@sightpress.org">team@sightpress.org</a>. Fonts: SIL Open Font License 1.1. Generated tables are rebuilt by <code>npm run build</code>.</p>
+  </footer>
+</body>
+</html>

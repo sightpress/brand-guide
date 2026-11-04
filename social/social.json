@@ -1,0 +1,96 @@
+{
+  "$description": "Social images: `safe` is [x0, y0, x1, y1], where the text must fit; `band` is the strip [y0, y1] the decoration is sized to (default: the whole height); `decorX` moves the decoration's centre (default: near the inline end). Social images: link-preview cards, profile covers and the avatar. This file is the source of truth. After changing any text, re-outline it (scripts/outline-text.py), then run `npm run build`. Every word drawn in an image must also be in its alt text; the build fails otherwise.",
+  "strings": {
+    "$description": "Text drawn in the images. An `accent` suffix (the headline's full stop) is drawn in amber, like the dot in the mark. Fonts are outlined to paths, so the images never depend on installed fonts.",
+    "headline": { "text": "Publish for every reader.", "font": "display", "accent": "." },
+    "motto": { "text": "Beyond sight.", "font": "display", "accent": "." },
+    "subline": { "text": "A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind.", "font": "text" },
+    "subline-short": { "text": "A powerful CMS for everyone, designed with blind and low-vision creators in mind.", "font": "text" }
+  },
+  "fonts": {
+    "display": { "file": "fonts/src/Fraunces[SOFT,WONK,opsz,wght].ttf", "axes": { "wght": 640, "SOFT": 50, "WONK": 0, "opsz": 72 }, "tracking": -0.015 },
+    "text": { "file": "fonts/src/AtkinsonHyperlegibleNext[wght].ttf", "axes": { "wght": 400 }, "tracking": 0 }
+  },
+  "images": [
+    {
+      "file": "social/sightpress-share-card-motto.png",
+      "name": "motto share card",
+      "use": "Link previews that lead with the motto: Open Graph (og:image), X and Bluesky large cards, Mastodon, LinkedIn posts, Slack and chat apps.",
+      "width": 1200, "height": 630,
+      "safe": [80, 72, 1120, 558],
+      "logo": 76, "headline-string": "motto", "headline": 100, "subline": 28, "measure": 650, "subline-string": "subline",
+      "alt": "SightPress logo. Beyond sight. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind."
+    },
+    {
+      "file": "social/sightpress-github-preview-motto.png",
+      "name": "motto GitHub social preview",
+      "use": "GitHub repository social preview (Settings, Social preview) that leads with the motto.",
+      "width": 1280, "height": 640,
+      "safe": [88, 76, 1192, 564],
+      "logo": 80, "headline-string": "motto", "headline": 112, "subline": 32, "measure": 740, "subline-string": "subline",
+      "alt": "SightPress logo. Beyond sight. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind."
+    },
+    {
+      "file": "social/sightpress-share-card.png",
+      "name": "share card",
+      "use": "Link previews: Open Graph (og:image), X and Bluesky large cards, Mastodon, LinkedIn posts, Slack and chat apps.",
+      "width": 1200, "height": 630,
+      "safe": [80, 72, 1120, 558],
+      "logo": 76, "headline": 84, "subline": 30, "measure": 640, "subline-string": "subline",
+      "alt": "SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind."
+    },
+    {
+      "file": "social/sightpress-github-preview.png",
+      "name": "GitHub social preview",
+      "use": "GitHub repository social preview (Settings, Social preview) for every sightpress repository.",
+      "width": 1280, "height": 640,
+      "safe": [88, 76, 1192, 564],
+      "logo": 80, "headline": 88, "subline": 32, "measure": 680, "subline-string": "subline",
+      "alt": "SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators and audiences in mind."
+    },
+    {
+      "file": "social/sightpress-cover-x-mastodon.png",
+      "name": "profile header for X, Mastodon and Bluesky",
+      "use": "Profile header on X, Mastodon and Bluesky (3 to 1). The profile picture covers the lower inline-start corner, so the text sits above it.",
+      "width": 1500, "height": 500,
+      "safe": [120, 70, 1380, 360],
+      "logo": 64, "headline": 72, "subline": 28, "measure": 820, "subline-string": "subline-short",
+      "alt": "SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind."
+    },
+    {
+      "file": "social/sightpress-cover-linkedin.png",
+      "name": "LinkedIn cover",
+      "use": "LinkedIn page and profile cover (4 to 1). The page logo covers the lower inline-start corner on mobile.",
+      "width": 1584, "height": 396,
+      "safe": [440, 64, 1460, 332],
+      "logo": 56, "headline": 64, "subline": 26, "measure": 760, "subline-string": "subline-short",
+      "alt": "SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind."
+    },
+    {
+      "file": "social/sightpress-cover-facebook.png",
+      "name": "Facebook cover",
+      "use": "Facebook page cover. Mobile crops the sides, so the text stays in the centre band.",
+      "width": 1640, "height": 624,
+      "safe": [260, 96, 1380, 528],
+      "logo": 72, "headline": 84, "subline": 32, "measure": 820, "subline-string": "subline-short",
+      "alt": "SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind."
+    },
+    {
+      "file": "social/sightpress-cover-youtube.png",
+      "name": "YouTube banner",
+      "use": "YouTube channel banner. Only the centre (1546 by 423 pixels) shows on every device, so the text stays inside it.",
+      "width": 2560, "height": 1440,
+      "safe": [527, 522, 2033, 918], "band": [508, 932], "decorX": 1800,
+      "logo": 64, "headline": 76, "subline": 28, "measure": 900, "subline-string": "subline-short",
+      "alt": "SightPress logo. Publish for every reader. A powerful CMS for everyone, designed with blind and low-vision creators in mind."
+    },
+    {
+      "file": "social/sightpress-avatar.png",
+      "name": "profile picture",
+      "use": "Profile picture on every network. The mark sits inside the circle that networks crop to.",
+      "width": 800, "height": 800,
+      "avatar": true,
+      "alt": "SightPress logo"
+    }
+  ]
+}

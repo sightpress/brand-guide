@@ -1,0 +1,17 @@
+{
+  "name": "@sightpress/brand-guide",
+  "private": true,
+  "description": "SightPress brand guide: logo, icons, colours, type and design tokens.",
+  "homepage": "https://sightpress.org",
+  "bugs": { "email": "team@sightpress.org" },
+  "author": "SightPress <team@sightpress.org> (https://sightpress.org)",
+  "license": "GPL-2.0-or-later",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}
