@@ -115,7 +115,7 @@ In Arabic and Hebrew text:
 They cover content (page, article, media, captions, transcripts), workflow
 (edit, review, schedule, publish, archive), accessibility (alt text, screen
 reader, keyboard, braille), status (success, warning, error, info) and the
-admin (sites, users, plugins, settings, move up and down).
+admin (sites, users, modules, settings, move up and down).
 
 **Social images**: share cards for link previews (1200 by 630), one with the
 headline and one with the motto "Beyond sight.", GitHub social previews (also
@@ -362,7 +362,7 @@ own repositories:
 - **Sites made with SightPress** use their own logo and favicons (`SiteBranding`).
   The SightPress logo appears only in the admin and on the project's own
   website.
-- **Plugins** use the same token custom properties, never their own colours.
+- **Modules** use the same token custom properties, never their own colours.
 - **Interface sounds** would ship from `core` behind a per-user "Play sounds"
   setting that is off by default. That setting, and how it shows in the admin,
   still needs to be specified in `PLAN.md`. The social images belong to the
