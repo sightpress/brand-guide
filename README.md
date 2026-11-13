@@ -374,6 +374,6 @@ own repositories:
   is by the Braille Institute of America; Fraunces is by Undercase Type; Noto
   Sans Arabic, Noto Naskh Arabic and Noto Sans Hebrew are by the Noto Project
   Authors; Frank Ruhl Libre is by the Frank Ruhl Libre Project Authors.
-- Everything else in this folder: GPL-2.0-or-later, like the rest of SightPress.
+- Everything else in this folder: GPL-3.0-or-later, like the rest of SightPress.
   The SightPress name and logo identify the project; a trademark policy for
   their use by others hasn't been decided yet.

@@ -5,7 +5,7 @@
   "homepage": "https://sightpress.org",
   "bugs": { "email": "team@sightpress.org" },
   "author": "SightPress <team@sightpress.org> (https://sightpress.org)",
-  "license": "GPL-2.0-or-later",
+  "license": "GPL-3.0-or-later",
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
