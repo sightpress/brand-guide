@@ -368,6 +368,11 @@ own repositories:
   still needs to be specified in `PLAN.md`. The social images belong to the
   project's own website and accounts.
 
+## Contributing
+
+Everyone can help, not only developers. See [CONTRIBUTING.md](CONTRIBUTING.md) for the ways to take part, and
+the [Code of Conduct](CODE_OF_CONDUCT.md) that everyone who takes part agrees to follow.
+
 ## Licences
 
 - Fonts: SIL Open Font License 1.1. See `fonts/OFL-*.txt`. Atkinson Hyperlegible
